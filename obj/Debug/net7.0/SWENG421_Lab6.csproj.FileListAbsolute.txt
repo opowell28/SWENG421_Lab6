@@ -1,0 +1,5 @@
+/Users/owenpowell/Library/Mobile Documents/com~apple~CloudDocs/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/Debug/net7.0/SWENG421_Lab6.csproj.AssemblyReference.cache
+/Users/owenpowell/Library/Mobile Documents/com~apple~CloudDocs/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/Debug/net7.0/SWENG421_Lab6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/owenpowell/Library/Mobile Documents/com~apple~CloudDocs/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/Debug/net7.0/SWENG421_Lab6.AssemblyInfoInputs.cache
+/Users/owenpowell/Library/Mobile Documents/com~apple~CloudDocs/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/Debug/net7.0/SWENG421_Lab6.AssemblyInfo.cs
+/Users/owenpowell/Library/Mobile Documents/com~apple~CloudDocs/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/Debug/net7.0/SWENG421_Lab6.csproj.CoreCompileInputs.cache

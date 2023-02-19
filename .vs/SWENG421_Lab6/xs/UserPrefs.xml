@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9B0F643A-F71D-4B15-9A7F-EE96745DEA95}|Default">
+  <MonoDevelop.Ide.ItemProperties.SWENG421__Lab6 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vertex.cs">
+    <Files>
+      <File FileName="Program.cs" Line="2" Column="1" />
+      <File FileName="Vertex.cs" Line="2" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SWENG421_Lab6" expanded="True">
+            <Node name="SWENG421_Lab6" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
