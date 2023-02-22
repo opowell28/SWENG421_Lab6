@@ -936,32 +936,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mriso\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/owenpowell/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SWENG421\\Lab06_update2\\SWENG421_Lab6.csproj",
+      "projectUniqueName": "/Users/owenpowell/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/SWENG421_Lab6.csproj",
       "projectName": "SWENG421_Lab6",
-      "projectPath": "C:\\SWENG421\\Lab06_update2\\SWENG421_Lab6.csproj",
-      "packagesPath": "C:\\Users\\mriso\\.nuget\\packages\\",
-      "outputPath": "C:\\SWENG421\\Lab06_update2\\obj\\",
+      "projectPath": "/Users/owenpowell/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/SWENG421_Lab6.csproj",
+      "packagesPath": "/Users/owenpowell/.nuget/packages/",
+      "outputPath": "/Users/owenpowell/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mriso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/owenpowell/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1013,7 +1005,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
       }
     }
   },

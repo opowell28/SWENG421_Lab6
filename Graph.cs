@@ -38,7 +38,7 @@ namespace SWENG421_Lab6
 			{
 				for (int j = 0; j < edges.Capacity; j++)
 				{
-					vertices[i].draw(vertices[i].x_coordinate, vertices[i].y_coordinate);
+					vertices[i].Draw(vertices[i].x_coordinate, vertices[i].y_coordinate);
 					edges[j].draw(edges[j].from_vertex, edges[j].to_vertex);
 				}
 			}
