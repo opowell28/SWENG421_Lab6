@@ -1,75 +1,82 @@
-﻿using System;
+﻿using Xamarin.Forms;
 
-namespace SWENG421_Lab6
+namespace SWENG421_Lab6;
+public class GraphManager : ContentPage
 {
-	public class GraphManager
-	{
-        private static GraphManager gmInstance = new GraphManager();
-        public List<Graph> graphs = new List<Graph>();
+    private GraphManager GmInstance { get; set; }
 
-        private GraphManager() { }
+    public GraphManager()
+    {
+        GmInstance = new GraphManager();
+    }
 
-        // returns the current instance of GraphManager
-        public GraphManager getInstance()
+    /* list of vertices and edges will be passed to this method and a new graph is created
+    and those vertices and edges are added to its list */
+    public Graph CreateGraph(List<Vertex> vertices, List<Edge> edges)
+    {
+        Graph g = new Graph();
+        foreach (var v in vertices)
         {
-            return gmInstance;
+            g.AddVertex(v);
         }
 
-        public void createGraph(string id)
-		{
-			// if the user selects a cosine graph
-			if (id == "cosine")
-			{
-				Graph cosine = new Graph("cosine");
-				
-				// create vertices for a graph at (0, 0)
-				Vertex v1 = new Vertex(1, -Math.PI, 1);
-				Vertex v2 = new Vertex(2, (-Math.PI) / 2, 0);
-				Vertex v3 = new Vertex(3, 0, -1);
-				Vertex v4 = new Vertex(4, (Math.PI) / 2, 0);
-				Vertex v5 = new Vertex(5, Math.PI, 1);
+        foreach (var e in edges)
+        {
+            g.AddEdge(e);
+        }
 
-				// add the vertices to the cosine graph
-				cosine.addVertex(v1);
-                cosine.addVertex(v2);
-                cosine.addVertex(v3);
-                cosine.addVertex(v4);
-                cosine.addVertex(v5);
-
-				// create edges between each pair of vertices
-                Edge e1 = new Edge(1, v1, v2);
-				Edge e2 = new Edge(2, v2, v3);
-				Edge e3 = new Edge(3, v3, v4);
-				Edge e4 = new Edge(4, v4, v5);
-
-				// add the edges to the cosine graph
-				cosine.addEdge(e1);
-				cosine.addEdge(e2);
-				cosine.addEdge(e3);
-				cosine.addEdge(e4);
-
-				// draw the edges and vertices
-				v1.draw();
-				v2.draw();
-				v3.draw();
-				v4.draw();
-				v5.draw();
-
-				e1.draw();
-				e2.draw();
-				e3.draw();
-				e4.draw();
-			}
-		}
-
-        /*This probably goes in Graph
-		public void editGraph(int id, int x, int y)
-		{
-			v[id].x_coordinate = x;
-			v[id].y_coordinate = y;
-			vertices.add(v[id]);
-		}
-		*/
+        return g;
     }
-}
+    
+    public Graph CopyGraph(Graph originalGraph)
+    {
+        Graph newGraph = new Graph();
 
+        // Copy the vertices
+        foreach (Vertex vertex in originalGraph.vertices)
+        {
+            Vertex newVertex = new Vertex(vertex.X, vertex.Y); // Create a new vertex with the same coordinates
+            newGraph.AddVertex(newVertex);
+        }
+
+        // Copy the edges
+        foreach (Edge edge in originalGraph.edges)
+        {
+            int startIndex = originalGraph.vertices.IndexOf(edge.Start);
+            int endIndex = originalGraph.vertices.IndexOf(edge.End);
+            Edge newEdge = new Edge(newGraph.vertices[startIndex], newGraph.vertices[endIndex]); // Create a new edge with the same start and end vertices
+            newGraph.AddEdge(newEdge);
+        }
+
+        return newGraph;
+    }
+    
+    public void EditGraph(Graph graph, Vertex vertexToEdit, double newX, double newY)
+    {
+        // Find the vertex to edit in the graph's vertices list
+        int index = graph.vertices.IndexOf(vertexToEdit);
+
+        if (index >= 0)
+        {
+            // Update the vertex's position
+            Vertex editedVertex = graph.vertices[index];
+            editedVertex.X = newX;
+            editedVertex.Y = newY;
+
+            // Update the position of all edges that connect to the edited vertex
+            foreach (Edge edge in graph.edges)
+            {
+                // Update the start or end vertex of the edge as necessary
+                if (edge.Start == vertexToEdit)
+                {
+                    edge.Start = editedVertex;
+                }
+                else if (edge.End == vertexToEdit)
+                {
+                    edge.End = editedVertex;
+                }
+            }
+        }
+    }
+
+}
