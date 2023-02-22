@@ -4,21 +4,18 @@ namespace SWENG421_Lab6
 {
 	public class GraphManager
 	{
-		private GraphManager gmInstance;
-		public List<Graph> graphs = new List<Graph>();
+        private static GraphManager gmInstance = new GraphManager();
+        public List<Graph> graphs = new List<Graph>();
 
-		public GraphManager()
-		{
-			gmInstance = new GraphManager();
-		}
+        private GraphManager() { }
 
-		// returns the current instance of GraphManager
-		public GraphManager getInstance()
-		{
-			return gmInstance;
-		}
+        // returns the current instance of GraphManager
+        public GraphManager getInstance()
+        {
+            return gmInstance;
+        }
 
-		public void createGraph(string id)
+        public void createGraph(string id)
 		{
 			// if the user selects a cosine graph
 			if (id == "cosine")
@@ -65,10 +62,14 @@ namespace SWENG421_Lab6
 			}
 		}
 
-		public void editGraph(string id)
+        /*This probably goes in Graph
+		public void editGraph(int id, int x, int y)
 		{
-
+			v[id].x_coordinate = x;
+			v[id].y_coordinate = y;
+			vertices.add(v[id]);
 		}
-	}
+		*/
+    }
 }
 
