@@ -1,9 +1,9 @@
-﻿using SWENG421_Lab6;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
+namespace SWENG421_Lab6;
 public class GraphManager : ContentPage
 {
-    private GraphManager GmInstance;
+    private GraphManager GmInstance { get; set; }
 
     public GraphManager()
     {
@@ -12,7 +12,7 @@ public class GraphManager : ContentPage
 
     /* list of vertices and edges will be passed to this method and a new graph is created
     and those vertices and edges are added to its list */
-    public void CreateGraph(List<Vertex> vertices, List<Edge> edges)
+    public Graph CreateGraph(List<Vertex> vertices, List<Edge> edges)
     {
         Graph g = new Graph();
         foreach (var v in vertices)
@@ -24,6 +24,8 @@ public class GraphManager : ContentPage
         {
             g.AddEdge(e);
         }
+
+        return g;
     }
     
     public Graph CopyGraph(Graph originalGraph)

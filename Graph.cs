@@ -33,7 +33,7 @@ namespace SWENG421_Lab6
 		}
 
 		// Print each vertex and edge
-		public void Print()
+		public ContentPage Print()
 		{
 			// Create the AbsoluteLayout to position the vertices
 			AbsoluteLayout layout = new AbsoluteLayout();
@@ -61,6 +61,8 @@ namespace SWENG421_Lab6
 			}
 
 			Content = layout;
+
+			return new ContentPage();
 		}
 	}
 }

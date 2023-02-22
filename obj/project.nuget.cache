@@ -1,66 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SwcZpAGz50MC32zTAifNjUNlz2ZoFJgLBtyN9U2LAzuZvi6k1beCS8Qcw0lu4YFj0Em/3NwI8u/nULkhy4diCQ==",
+  "dgSpecHash": "JMXDRtfV1c3w+pbw2fuczUTklzQcIZzmqaGMgmmW7OeKiZqNf6a/i4ooYe5KH56YVNNRCLXNQP9Adp2uSQ8t7A==",
   "success": true,
   "projectFilePath": "/Users/owenpowell/Documents/SWENG 421/Labs/Lab 6/SWENG421_Lab6/SWENG421_Lab6.csproj",
   "expectedPackageFiles": [
-    "/Users/owenpowell/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/microsoft.win32.systemevents/4.5.0/microsoft.win32.systemevents.4.5.0.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/opentk/3.1.0/opentk.3.1.0.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/opentk.glcontrol/3.1.0/opentk.glcontrol.3.1.0.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp/2.88.3/skiasharp.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.nativeassets.macos/2.88.3/skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.nativeassets.win32/2.88.3/skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views/2.88.3/skiasharp.views.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views.desktop.common/2.88.3/skiasharp.views.desktop.common.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views.forms/2.88.3/skiasharp.views.forms.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views.gtk2/2.88.3/skiasharp.views.gtk2.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views.windowsforms/2.88.3/skiasharp.views.windowsforms.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/skiasharp.views.wpf/2.88.3/skiasharp.views.wpf.2.88.3.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/system.drawing.common/4.5.1/system.drawing.common.4.5.1.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/xamarin.forms/5.0.0.2545/xamarin.forms.5.0.0.2545.nupkg.sha512",
-    "/Users/owenpowell/.nuget/packages/xamarin.forms.platform.wpf/4.8.0.1821/xamarin.forms.platform.wpf.4.8.0.1821.nupkg.sha512"
+    "/Users/owenpowell/.nuget/packages/xamarin.forms/5.0.0.2545/xamarin.forms.5.0.0.2545.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTK 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenTK",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTK.GLControl 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenTK.GLControl",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SkiaSharp.Views 2.88.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SkiaSharp.Views",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SkiaSharp.Views.Gtk2 2.88.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SkiaSharp.Views.Gtk2",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
