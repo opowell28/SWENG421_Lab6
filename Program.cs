@@ -1,5 +1,7 @@
 ﻿namespace SWENG421_Lab6;
 
+// We started using Xamarin because I (Owen) am on MacOS and can't test Windows Forms programs
+
 public class Program
 {
     static void Main(string[] args)
@@ -35,5 +37,13 @@ public class Program
         
         // TODO: this should open a window and display the graph, but I believe there is a problem with the ContentView 
         g.Print();
+
+        // copy graph g to create new graph g2
+        Graph g2 = gm.CopyGraph(g);
+        g2.Print();
+        
+        // edit g2 graph
+        gm.EditGraph(g2, v3, 5, 4);
+        g2.Print();
     }
 }
