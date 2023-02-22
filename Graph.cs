@@ -39,7 +39,7 @@ namespace SWENG421_Lab6
 				for (int j = 0; j < edges.Capacity; j++)
 				{
 					vertices[i].Draw(vertices[i].x_coordinate, vertices[i].y_coordinate);
-					edges[j].draw(edges[j].from_vertex, edges[j].to_vertex);
+					edges[j].Draw(edges[j].FromVertex, edges[j].ToVertex);
 				}
 			}
 		}
